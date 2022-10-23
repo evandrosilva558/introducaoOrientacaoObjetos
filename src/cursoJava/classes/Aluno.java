@@ -12,5 +12,11 @@ public class Aluno {
 	String dataMatricula;
 	String nomeEscola;
 	String serieMatriculado;
+	
+	public Aluno(String nome, int idade) {
+		super();
+		this.nome = nome;
+		this.idade = idade;
+	}
 
 }
