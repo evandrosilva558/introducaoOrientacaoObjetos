@@ -2,6 +2,7 @@ package cursoJava.classes;
 
 public class Aluno {
 	
+	/* Atributos da classe Aluno*/
 	private String nome;
 	private int idade;
 	private String dataNascimento;
@@ -16,13 +17,14 @@ public class Aluno {
 	private double nota2;
 	private double nota3;
 	private double nota4;
-	private double media;
 	
-	public Aluno(String nome, int idade, String dataNascimento,
+	/* Construtor do Objeto Aluno*/
+	public Aluno (String nome, int idade, String dataNascimento,
 			String registroGeral, String numeroCpf,
 			String nomeMae, String nomePai,
 			String dataMatricula, String nomeEscola,
-			String serieMatriculado) {
+			String serieMatriculado, double nota1, double nota2,
+			double nota3, double nota4) {
 		super();
 		
 			this.nome = nome;
@@ -38,7 +40,6 @@ public class Aluno {
 	}
 	
 	/* Metodos SETTERS e GETTERS */
-	
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
@@ -75,7 +76,7 @@ public class Aluno {
 		this.numeroCpf = numeroCpf;
 	}
 	
-	public String getnumeroCpf() {
+	public String getNumeroCpf() {
 		return numeroCpf;
 	}
 	
@@ -99,7 +100,7 @@ public class Aluno {
 		this.dataMatricula = dataMatricula;
 	}
 	
-	public String getdataMatricula() {
+	public String getDataMatricula() {
 		return dataMatricula;
 	}
 	
@@ -151,11 +152,8 @@ public class Aluno {
 		return nota4;
 	}
 	
-	public void setMedia(double media) {
-		this.media = media;
-	}
-	
+	/* Calculo da média do Aluno*/
 	public double getMedia() {
-		return media;
+		return (nota1 + nota2 + nota3 + nota4)/4;
 	}
 }
