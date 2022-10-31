@@ -156,4 +156,14 @@ public class Aluno {
 	public double getMedia() {
 		return (nota1 + nota2 + nota3 + nota4)/4;
 	}
+	
+	/* Retorna se o aluno esta aprovado*/
+	public boolean getAlunoAprovado() {
+		double media = this.getMedia();
+		if (media >= 7) {
+			return true;
+		}else {
+			return false;
+		}
+	}
 }

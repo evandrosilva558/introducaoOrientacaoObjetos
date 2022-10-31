@@ -41,7 +41,8 @@ public class executaPrograma {
 				" Escola: " + aluno1.getNomeEscola() + "\n" +
 				" Série: " + aluno1.getSerieMatriculado() + "\n" +
 				" Média: " + aluno1.getMedia() + "\n" +
-				"------------------------------------");
+				" Resultado: " + (aluno1.getAlunoAprovado() ? "Aprovado" : "Reprovado") +
+				"\n" + "------------------------------------");
 		
 	}
 
