@@ -47,20 +47,7 @@ public class executaPrograma {
 			aluno1.setNota4(Integer.valueOf(nota4));
 				
 		/* Imprime os dados do Objeto Aluno*/
-		System.out.print("------------------------------------" + "\n" +
-				" Nome: " + aluno1.getNome() + "\n" +
-				" Idade: " + aluno1.getIdade() + "\n" +
-				" Nascimento: " + aluno1.getDataNascimento() + "\n" +
-				" RG: " + aluno1.getRegistroGeral() + "\n" +
-				" CPF: " + aluno1.getNumeroCpf() + "\n" +
-				" Nome da Mãe: " + aluno1.getNomeMae() + "\n" +
-				" Nome do Pai: " + aluno1.getNomePai() + "\n" +
-				" Data da Matricula: " + aluno1.getDataMatricula() + "\n" +
-				" Escola: " + aluno1.getNomeEscola() + "\n" +
-				" Série: " + aluno1.getSerieMatriculado() + "\n" +
-				" Média: " + aluno1.getMedia() + "\n" +
-				" Resultado: " + (aluno1.getAlunoAprovado() ? "Aprovado" : "Reprovado") +
-				"\n" + "------------------------------------");
+		System.out.print(aluno1);
 		
 	}
 

@@ -1,7 +1,7 @@
 package cursoJava.classes;
 
 public class Aluno {
-	
+
 	/* Atributos da classe Aluno*/
 	private String nome;
 	private int idade;
@@ -166,4 +166,16 @@ public class Aluno {
 			return false;
 		}
 	}
+	
+	/*Método toString retorna uma representação do Objeto*/
+	@Override
+	public String toString() {
+		return  " Aluno" + "\n" + " Nome: "+ getNome() + "\n" + 
+				" Idade: " + getIdade() + "\n" + " Nascimento: " + getDataNascimento() + "\n" +
+				" Rg: " + getRegistroGeral() + " Cpf: " + getNumeroCpf() + "\n" + 
+				" Nome da Mãe: " + getNomeMae() + "\n" +" Nome do Pai: " + getNomePai() + "\n" +
+				" Matricula: " + getDataMatricula() + "\n" + " Série: " + getSerieMatriculado() + "\n" + 
+				" Media: " + getMedia() + "\n" + " Resultado:" + getAlunoAprovado() ;
+	}
+	
 }
