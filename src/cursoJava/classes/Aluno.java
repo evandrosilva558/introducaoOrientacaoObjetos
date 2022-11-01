@@ -1,5 +1,7 @@
 package cursoJava.classes;
 
+import java.util.Objects;
+
 public class Aluno {
 
 	/* Atributos da classe Aluno*/
@@ -165,6 +167,24 @@ public class Aluno {
 		}else {
 			return false;
 		}
+	}
+	
+	/* Métodos EQUALS e HASHCODE para diferênciar os objeto apartir de um ou mais atributos*/
+	@Override
+	public int hashCode() {
+		return Objects.hash(numeroCpf, registroGeral);
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Aluno other = (Aluno) obj;
+		return Objects.equals(numeroCpf, other.numeroCpf) && Objects.equals(registroGeral, other.registroGeral);
 	}
 	
 	/*Método toString retorna uma representação do Objeto*/
