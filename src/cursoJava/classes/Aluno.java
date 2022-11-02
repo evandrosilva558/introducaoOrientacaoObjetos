@@ -15,6 +15,10 @@ public class Aluno {
 	private String dataMatricula;
 	private String nomeEscola;
 	private String serieMatriculado;
+	private String disciplina1;
+	private String disciplina2;
+	private String disciplina3;
+	private String disciplina4;
 	private double nota1;
 	private double nota2;
 	private double nota3;
@@ -154,6 +158,38 @@ public class Aluno {
 		return nota4;
 	}
 	
+	public String getDisciplina1() {
+		return disciplina1;
+	}
+
+	public void setDisciplina1(String disciplina1) {
+		this.disciplina1 = disciplina1;
+	}
+
+	public String getDisciplina2() {
+		return disciplina2;
+	}
+
+	public void setDisciplina2(String disciplina2) {
+		this.disciplina2 = disciplina2;
+	}
+
+	public String getDisciplina3() {
+		return disciplina3;
+	}
+
+	public void setDisciplina3(String disciplina3) {
+		this.disciplina3 = disciplina3;
+	}
+
+	public String getDisciplina4() {
+		return disciplina4;
+	}
+
+	public void setDisciplina4(String disciplina4) {
+		this.disciplina4 = disciplina4;
+	}
+	
 	/* Calculo da média do Aluno*/
 	public double getMedia() {
 		return (nota1 + nota2 + nota3 + nota4)/4;
@@ -169,7 +205,7 @@ public class Aluno {
 		}
 	}
 	
-	/* Métodos EQUALS e HASHCODE para diferênciar os objeto apartir de um ou mais atributos*/
+	/* Métodos EQUALS e HASHCODE para diferenciar os objeto apartir de um ou mais atributos*/
 	@Override
 	public int hashCode() {
 		return Objects.hash(numeroCpf, registroGeral);
@@ -192,9 +228,11 @@ public class Aluno {
 	public String toString() {
 		return  " Aluno" + "\n" + " Nome: "+ getNome() + "\n" + 
 				" Idade: " + getIdade() + "\n" + " Nascimento: " + getDataNascimento() + "\n" +
-				" Rg: " + getRegistroGeral() + " Cpf: " + getNumeroCpf() + "\n" + 
+				" Rg: " + getRegistroGeral() + "\n" + " Cpf: " + getNumeroCpf() + "\n" + 
 				" Nome da Mãe: " + getNomeMae() + "\n" +" Nome do Pai: " + getNomePai() + "\n" +
 				" Matricula: " + getDataMatricula() + "\n" + " Série: " + getSerieMatriculado() + "\n" + 
+				" Disciplina1: " + getDisciplina1() + "\n" + " Disciplina2: " + getDisciplina2() + "\n" +
+				" Disciplina3: " + getDisciplina3() + "\n" + " Disciplina4: " + getDisciplina4() + "\n" +
 				" Media: " + getMedia() + "\n" + " Resultado:" + getAlunoAprovado() ;
 	}
 	

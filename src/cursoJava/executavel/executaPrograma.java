@@ -25,9 +25,14 @@ public class executaPrograma {
 			String matricula = JOptionPane.showInputDialog("Data Matricula?");
 			String escola = JOptionPane.showInputDialog("Nome da Escola?");
 			String serie = JOptionPane.showInputDialog("Série?");
+			
+			String disciplina1 = JOptionPane.showInputDialog("Qual é a Disciplina 1?");
 			String nota1 = JOptionPane.showInputDialog("Nota 1?");
+			String disciplina2 = JOptionPane.showInputDialog("Qual é a Disciplina 2?");
 			String nota2 = JOptionPane.showInputDialog("Nota 2?");
+			String disciplina3 = JOptionPane.showInputDialog("Qual é a Disciplina 3?");
 			String nota3 = JOptionPane.showInputDialog("Nota 3?");
+			String disciplina4 = JOptionPane.showInputDialog("Qual é a Disciplina 4?");
 			String nota4 = JOptionPane.showInputDialog("Nota 4?");
 			
 			/*Seta os dados do Objeto aluno*/
@@ -41,9 +46,14 @@ public class executaPrograma {
 			aluno1.setDataMatricula(matricula);
 			aluno1.setNomeEscola(escola);
 			aluno1.setSerieMatriculado(serie);
+			
+			aluno1.setDisciplina1(disciplina1);
 			aluno1.setNota1(Integer.valueOf(nota1));
+			aluno1.setDisciplina2(disciplina2);
 			aluno1.setNota2(Integer.valueOf(nota2));
+			aluno1.setDisciplina3(disciplina3);
 			aluno1.setNota3(Integer.valueOf(nota3));
+			aluno1.setDisciplina4(disciplina4);
 			aluno1.setNota4(Integer.valueOf(nota4));
 				
 		/* Imprime os dados do Objeto Aluno*/
