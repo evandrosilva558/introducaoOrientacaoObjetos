@@ -47,14 +47,16 @@ public class executaPrograma {
 			aluno1.setNomeEscola(escola);
 			aluno1.setSerieMatriculado(serie);
 			
-			aluno1.setDisciplina1(disciplina1);
-			aluno1.setNota1(Integer.valueOf(nota1));
-			aluno1.setDisciplina2(disciplina2);
-			aluno1.setNota2(Integer.valueOf(nota2));
-			aluno1.setDisciplina3(disciplina3);
-			aluno1.setNota3(Integer.valueOf(nota3));
-			aluno1.setDisciplina4(disciplina4);
-			aluno1.setNota4(Integer.valueOf(nota4));
+			/*Seta as Disciplinas do Aluno no OBJ Disciplina*/
+			aluno1.getDisciplina().setNota1(Integer.valueOf(nota1));
+			aluno1.getDisciplina().setNota2(Integer.valueOf(nota2));
+			aluno1.getDisciplina().setNota3(Integer.valueOf(nota3));
+			aluno1.getDisciplina().setNota4(Integer.valueOf(nota4));
+			aluno1.getDisciplina().setDisciplina1(disciplina1);
+			aluno1.getDisciplina().setDisciplina2(disciplina2);
+			aluno1.getDisciplina().setDisciplina3(disciplina3);
+			aluno1.getDisciplina().setDisciplina4(disciplina4);
+			
 				
 		/* Imprime os dados do Objeto Aluno*/
 		System.out.print(aluno1);
